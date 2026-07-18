@@ -194,4 +194,32 @@ rgba(255, 255, 255, .5);
 #message {
     position: relative;
     top: 70px;
+}
+.gifts{
+    display: grid;
+    grid-template-columns: repeat(3,80px);
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.gift{
+    width:80px;
+    height:80px;
+    font-size:50px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.2s;
 }        
+.gift:hover {
+    transform: scale(1.2);
+}
+@keyframes wiggle {
+    0%,100% {transform: rotate(0deg); }
+    25% {transform: rotate(-8deg); }
+    75% {transform: rotate(8deg); }
+}
+.gift {
+    animation:wiggle is infinite;
+}

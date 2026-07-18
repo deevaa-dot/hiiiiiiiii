@@ -10,9 +10,24 @@
 </head>
 <body>
     <div id="intro">
-    <h1>Happy Birthday!!!!!</h1>
-    <p>I made something special for you.😛</p>
-    <button onclick="showMessage()">🎁 Tap to open your Gift</button>
+        <h1>Happy Birthday!!!!!</h1>
+        <p>I made something special for you.😛</p>
+        <p>One of these gifts has a surprise....🤫</p>
+        <button onclick="startGame()">🎁 Tap to continuee</button>
+    </div>
+    <div id="game" style="display:none;"> 
+        <h2>😺 Find the hidden cat!</h2>
+        <div class="gifts">
+            <button class="gift" onclick="checkGift(0)">🎁</button>
+            <button class="gift" onclick="checkGift(1)">🎁</button>
+            <button class="gift" onclick="checkGift(2)">🎁</button>
+            <button class="gift" onclick="checkGift(3)">🎁</button>
+            <button class="gift" onclick="checkGift(4)">🎁</button>
+            <button class="gift" onclick="checkGift(5)">🎁</button>
+            <button class="gift" onclick="checkGift(6)">🎁</button>
+            <button class="gift" onclick="checkGift(7)">🎁</button>
+            <button class="gift" onclick="checkGift(8)">🎁</button>
+        </div>
     </div>
     <div id="message" style="display:none;">
         <h1> Heyyyy Thanuu</h1>
@@ -53,5 +68,6 @@
 </div>
 <audio id="giftsound"src="gift.mp3"></audio>
 <audio id="birthdaySong" src="song.mp3"></audio>
+<script src="script.js"></script>
 </body>
 </html>
