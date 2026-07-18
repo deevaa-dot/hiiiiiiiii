@@ -157,21 +157,28 @@ rgba(255, 255, 255, .5);
 }
 @media (max-width: 600px) {
     h1 {
-        font-size: 42px; 
+        font-size: 62px;
+        line-height: 1.2;
+    }
+    p {
+        font-size: 33px;
+        line-height: 1.5;
     }
     #message {
-        width:90%;
+        width:92%;
         font-size: 18px;
     }
     #cat {
-        width: 250px;
+        width: 320px;
+        max-width: 90%;
     }
     .flowers span {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
     button {
-        padding: 14px 28px;
-        font-size: 18px;
+        font-size: 33px;
+        padding: 16px 32px;
+        border-radius: 15px;
     }
 }        
