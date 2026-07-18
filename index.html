@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🌸😛Happy Birthday!!!!!!!!!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <meta name="viewport"
+    content=""width=device-width,
+    initial-scale="1.0">
+</head>
+<body>
+    <div id="intro">
+    <h1>Happy Birthday!</h1>
+    <p>I made something special for you.😛</p>
+    <button onclick="showMessage()">🎁 Tap to open your Gift</button>
+    </div>
+    <div id="message" style="display:none;">
+        <h1> Heyyyy Thanuu</h1>
+
+        <p>
+            Happy Birthday!!
+            I am really glad that I met youu.
+            I hope your day is filled with happiness, laughter and lots of cakee. wuwuwuwuwu
+        </p>
+         <img id="cat" src="cat.gif" width="300" alt="cat">
+         <p>
+            Hope this little website made you smile a little🤠
+         </p>
+        </div>
+        <script>
+        function showMessage() {
+            document.getElementById("intro").style.display = "none"
+            document.querySelector("#message").style.display = "block";
+            document.getElementById("giftsound").play();
+            document.getElementById("birthdaySong").play();
+
+            confetti({
+                particlecount: 180,
+                spread: 100,
+                origin: {y: 0.6}
+            });
+        }
+</script>
+<div class="flowers">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<audio id="giftsound"src="gift.mp3"></audio>
+<audio id="birthdaySong" src="song.mp3"></audio>
+</body>
+</html>

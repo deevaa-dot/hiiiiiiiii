@@ -1,0 +1,162 @@
+body {
+    background-color: #0f172a;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: 100vh;
+
+}
+button {
+    background-color: #ffffff;
+    color: #0f172a;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 12px 24px;
+
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+
+    margin-top: 20px;
+}
+button {
+    transition: 0.3s;
+}
+button:hover {
+    transform: scale(1.1);
+    background-color: #ffd966;
+}
+#message {
+    display: none;
+    animation: fadeIn 1s ease;
+    max-width: 700px;
+    margin: middle;
+    text-align: center;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);   
+    }
+}
+#cat {
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(255,255,255,0.3);
+    margin-top: 20px;
+}
+#message{
+    max-width: 700px;
+    margin-top: 30px;
+}
+.flowers {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    animation: float 12s linear infinite;
+    pointer-events: none;
+}
+.flowers span {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-image: url("babybreath.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: floatFlowers 11s linear infinite;
+}
+.flowers span:nth-child(1) {
+    left: 5%;
+    animation-delay: 0s;
+}
+.flowers span:nth-child(2) {
+    left: 20%;
+    animation-delay: 2s;
+}
+.flowers span:nth-child(3) {
+    left: 35%;
+    animation-delay: 4s;
+}
+.flowers span:nth-child(4) {
+    left:50%;
+    animation-delay: 1s;
+}
+.flowers span:nth-child(5) {
+    left: 65%;
+    animation-delay: 5s;
+}
+.flowers span:nth-child(6) {
+    left: 80%;
+    animation-delay: 3s;
+}
+.flowers span:nth-child(7) {
+    left: 90%;
+    animation-delay: 2s;
+}
+.flowers span:nth-child(8) {
+    left: 45%;
+    animation-delay: 8s;
+}
+@keyframes floatFlowers {
+    from {
+        transform: translateY(100vh)
+rotate(0deg);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    to {
+        transform: translateY(-100px)
+rotate(360deg);
+        opacity: 0;
+    }
+}
+h1 {
+    text-shadow: 0 0 20px
+rgba(255, 255, 255, .5);
+}
+@keyframes glow {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+#message h1 {
+    animation: glow 2s ease-in-out infinite;
+    text-shadow: 0 0 10px white, 0 0 20px white;
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 35px; 
+    }
+    #message {
+        width:90%;
+        font-size: 18px;
+    }
+    #cat {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}        
