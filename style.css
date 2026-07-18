@@ -40,7 +40,7 @@ button:hover {
     display: none;
     animation: fadeIn 1s ease;
     max-width: 700px;
-    margin: middle;
+    margin: auto;
     text-align: center;
 }
 @keyframes fadeIn {
@@ -83,34 +83,42 @@ button:hover {
 }
 .flowers span:nth-child(1) {
     left: 5%;
+    top: 100%;
     animation-delay: 0s;
 }
 .flowers span:nth-child(2) {
     left: 20%;
+    top: 120%;
     animation-delay: 2s;
 }
 .flowers span:nth-child(3) {
     left: 35%;
+    top: 140%;
     animation-delay: 4s;
 }
 .flowers span:nth-child(4) {
     left:50%;
+    top: 110%;
     animation-delay: 1s;
 }
 .flowers span:nth-child(5) {
     left: 65%;
+    top: 130%;
     animation-delay: 5s;
 }
 .flowers span:nth-child(6) {
     left: 80%;
+    top: 150%;
     animation-delay: 3s;
 }
 .flowers span:nth-child(7) {
     left: 90%;
+    top: 160%;
     animation-delay: 2s;
 }
 .flowers span:nth-child(8) {
     left: 45%;
+    top: 170%;
     animation-delay: 8s;
 }
 @keyframes floatFlowers {
@@ -126,7 +134,7 @@ rotate(0deg);
         opacity: 0.8;
     }
     to {
-        transform: translateY(-100px)
+        transform: translateY(-120vh)
 rotate(360deg);
         opacity: 0;
     }
