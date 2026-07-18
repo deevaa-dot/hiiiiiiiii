@@ -1,4 +1,4 @@
-let secretGift = Math.floor(Math.random()*8) +1;
+let secretGift = Math.floor(Math.random()*8)
 function startGame(){
 document.getElementById("intro").style.display="none";
 document.getElementById("game").style.display="block";
